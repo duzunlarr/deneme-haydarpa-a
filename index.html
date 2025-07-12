@@ -278,10 +278,22 @@
         line-height: 1.4 !important;
     }
     
-    .info-image {
+.info-image {
         max-width: 250px !important;
         margin: 8px auto !important;
         display: block !important;
+    }
+}
+
+/* Web'de timeline normale dönmesi için */
+@media (min-width: 769px) {
+    .timeline-container {
+        position: absolute !important;
+        left: 20px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        width: 60px !important;
+        height: 400px !important;
     }
 }
     </style>
