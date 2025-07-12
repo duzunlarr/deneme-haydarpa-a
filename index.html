@@ -294,6 +294,36 @@
         transform: translateY(-50%) !important;
         width: 60px !important;
         height: 400px !important;
+        z-index: 1000 !important;
+    }
+    
+    .timeline {
+        position: relative !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        height: 100% !important;
+    }
+    
+    .timeline::before {
+        content: '' !important;
+        position: absolute !important;
+        left: 50% !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        width: 1px !important;
+        background: #4673a0 !important;
+        transform: translateX(-50%) !important;
+        display: block !important;
+    }
+    
+    .timeline-line {
+        flex-grow: 1 !important;
+        height: 1px !important;
+        background-color: #4673a0 !important;
+        margin: 0 5px !important;
+        display: block !important;
     }
 }
     </style>
